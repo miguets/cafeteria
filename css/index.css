@@ -1,0 +1,49 @@
+section{
+    background: url(../sources/inicio.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+h2{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bienvenida{
+    margin-top: 20px;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.bienvenida > a{
+    padding: 10px;
+    text-align: center;
+    border: solid 1px white;
+    margin: 1px;
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    margin-bottom: 20px;
+    background: black;
+}
+
+.bienvenida > a:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
