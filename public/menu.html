@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página web</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
@@ -26,12 +27,57 @@
     </header>
     <main>
         <section>
-            
+            <h2>Menú</h2>
+            <form action="get">
+                <div class="catalogo">
+                    <div class="item" data-name="Café" data-price="50">
+                        <img src="../sources/vaso_cafe.webp" alt="Café">
+                        <h4>Café</h4>
+                        <p>$50</p>
+                    </div>
+                    <div class="item" data-name="Pan" data-price="30">
+                        <img src="../sources/Cuernito.webp" alt="Pan">
+                        <h4>Pan</h4>
+                        <p>$30</p>
+                    </div>
+                    <div class="item" data-name="Galletas" data-price="20">
+                        <img src="../sources/galleta.jpg" alt="Galletas">
+                        <h4>Galletas</h4>
+                        <p>$20</p>
+                    </div>
+                    <div class="item" data-name="chamoyada" data-price="40">
+                        <img src="../sources/chamoyada.jpg" alt="chamoyada">
+                        <h4>chamoyada</h4>
+                        <p>$40</p>
+                    </div>
+                </div>
+
+                <!-- Aquí se mostrarán los campos dinámicamente según los productos seleccionados -->
+                <div id="dynamic-fields"></div>
+
+                <div class="image-upload">
+                    <label for="image">Adjuntar imagen:</label>
+                    <input type="file" id="image">
+                </div>
+
+                <div class="note-section">
+                    <label for="note">Nota para el pedido:</label>
+                    <div class="textareanote"></div><textarea id="note" rows="4"></textarea>
+                </div>
+                
+            </form>
+
+            <h3 class="rcar">Resumen del carrito:</h3>
+            <ul id="cart-items"></ul>
+            <p class="ptotal">Total: $<span id="total-price">0</span></p>
+            <div class="paybutton"><button onclick="alert('Pago realizado con éxito!')">Realizar Pago</button></div>
         </section>
     </main>
-
     <footer>
         <p>2024 Cafeteria. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/menu.js">
+    
+    </script>
 </body>
 </html>
